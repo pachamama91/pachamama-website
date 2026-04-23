@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCA - Excellence Redefined</title>
+    <style>
+        /* Theme Palette: 
+           Faded Yellow: #d4bc5c 
+           Dark Yellow (Hover): #b09a47
+           Deep Black: #0f0f0f 
+           Soft Black: #1a1a1a 
+        */
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #0f0f0f;
+            border-bottom: 2px solid #d4bc5c;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { 
+            font-size: 28px; 
+            font-weight: 900; 
+            color: #d4bc5c; 
+            letter-spacing: 4px; 
+        }
+
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { 
+            text-decoration: none; 
+            color: #ffffff; 
+            font-weight: 500; 
+            font-size: 13px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            transition: 0.3s; 
+        }
+        nav ul li a:hover { color: #d4bc5c; }
+
+        /* General Section Styling */
+        .section { padding: 90px 10%; text-align: center; }
+        h2 { font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+        .yellow-divider { width: 50px; height: 3px; background: #d4bc5c; margin: 10px auto 50px; }
+
+        /* Services Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { 
+            background: #1a1a1a; 
+            padding: 40px; 
+            border-radius: 4px; 
+            border: 1px solid #333; 
+            transition: 0.3s; 
+        }
+        .card:hover { border-color: #d4bc5c; transform: translateY(-5px); }
+        .card h3 { color: #d4bc5c; text-transform: uppercase; font-size: 1.2rem; }
+        .card p { color: #aaa; line-height: 1.6; }
+
+        /* Careers & Downloads List */
+        .list-container { max-width: 850px; margin: 0 auto; text-align: left; }
+        .list-item { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: #1a1a1a; 
+            padding: 25px; 
+            margin-bottom: 15px; 
+            border-left: 4px solid #d4bc5c;
+        }
+        .list-item h4 { margin: 0; color: #fff; font-size: 1.1rem; }
+        .list-item p { margin: 5px 0 0; font-size: 13px; color: #777; }
+        
+        .action-btn { 
+            background: #d4bc5c; 
+            color: #000; 
+            padding: 10px 24px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 11px; 
+            letter-spacing: 1px;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .action-btn:hover { background: #b09a47; }
+
+        /* Contact Form */
+        .contact-container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            background: #1a1a1a; 
+            padding: 50px; 
+            text-align: left; 
+            border: 1px solid #333; 
+        }
+        .form-group { margin-bottom: 25px; }
+        label { display: block; margin-bottom: 8px; color: #d4bc5c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        input, textarea { 
+            width: 100%; 
+            padding: 14px; 
+            background: #0f0f0f; 
+            border: 1px solid #333; 
+            color: white; 
+            box-sizing: border-box; 
+        }
+        input:focus, textarea:focus { border-color: #d4bc5c; outline: none; }
+        .submit-btn { 
+            background: #d4bc5c; 
+            color: #000; 
+            padding: 15px 30px; 
+            border: none; 
+            font-weight: 900; 
+            cursor: pointer; 
+            width: 100%; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+
+        footer { text-align: center; padding: 60px; background: #000; color: #555; font-size: 12px; border-top: 1px solid #1a1a1a; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">INCA</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="yellow-divider"></div>
+        <div class="grid">
+            <div class="card"><h3>Consulting</h3><p>High-level strategic business analysis and implementation planning.</p></div>
+            <div class="card"><h3>Digital Solutions</h3><p>Bespoke software architecture designed for enterprise-level scaling.</p></div>
+            <div class="card"><h3>Cloud Systems</h3><p>Secure, high-availability cloud infrastructure and data protection.</p></div>
+        </div>
+    </section>
+
+    <section id="careers" class="section" style="background: #0a0a0a;">
+        <h2>Careers</h2>
+        <div class="yellow-divider"></div>
+        <div class="list-container">
+            <div class="list-item">
+                <div><h4>Senior Project Manager</h4><p>Nairobi HQ • Full Time</p></div>
+                <a href="#" class="action-btn">APPLY</a>
+            </div>
+            <div class="list-item">
+                <div><h4>Full Stack Developer</h4><p>Remote • Contract</p></div>
+                <a href="#" class="action-btn">APPLY</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="downloads" class="section">
+        <h2>Downloads</h2>
+        <div class="yellow-divider"></div>
+        <div class="list-container">
+            <div class="list-item">
+                <div><h4>2024 Corporate Profile</h4><p>PDF • 3.2 MB</p></div>
+                <a href="#" class="action-btn">GET FILE</a>
+            </div>
+            <div class="list-item">
+                <div><h4>Compliance Manual</h4><p>PDF • 1.8 MB</p></div>
+                <a href="#" class="action-btn">GET FILE</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background: #0a0a0a;">
+        <h2>Contact Us</h2>
+        <div class="yellow-divider"></div>
+        <div class="contact-container">
+            <form>
+                <div class="form-group"><label>Full Name</label><input type="text" placeholder="John Doe"></div>
+                <div class="form-group"><label>Email Address</label><input type="email" placeholder="j.doe@inca.com"></div>
+                <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Your enquiry..."></textarea></div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 INCA SYSTEMS. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
